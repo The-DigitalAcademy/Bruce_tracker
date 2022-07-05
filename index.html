@@ -12,24 +12,45 @@
         <div class="title"><h1>Track your budget</h1></div>
         <div class="create">
             <input type="text" placeholder="Enter your name Expense"><br>
-            <button>Expense</button>
+            <button  class="expenseBtn">Expense</button>
         </div>
 
         <div class="fill">
             <input type="text" placeholder="Enter your Income"><br>
-            <button>Income</button>
+            <button class="incomeBtn">Income</button>
         </div>
 
-        <div class="Description">
+        <center><table class="table"></center>
+            <thead>
+              <tr>
+   
+               <br> <th scope="col">Information</th><br>
+                <th scope="col"> Expense</th><br>
+                <th scope="col">Income</th>
+                <th scope="col">Value</th>
+              </tr>
+            </thead>
+            <body>
+              <tr>
+                <th scope="row">1</th>
+                <td>Electrcity</td>
+                <td>salary</td>
+                <td>R1000</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Food</td>
+                <td>product sale</td>
+                <td>R250</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Insurance</td>
+                <td>R750</td>
+              </tr>
+            </tbody>
+          </table>
             
-            <h2>Expense</h2>
-            <span>food</span><br>
-            <span>electrcity</span>
-
-            <h2>Income</h2>
-            <span>salary</span>
-            <span>Instruction</span>
-        </div>
     </div>
     <script src="./index.js"></script>
 </body>
