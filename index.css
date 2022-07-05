@@ -68,3 +68,7 @@ button:hover{
 .expenseBtn{
     background-color: red;
 }
+
+.incomeBtn{
+    background-color: green;
+}
