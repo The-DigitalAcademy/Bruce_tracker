@@ -20,11 +20,10 @@ var names = document.getElementById('name').value
 
 names.push('name')
 
-console.log(name)
+console.log(state)
 }
 
 function expenseAdd() {
-// console.log('Bruce Morakane')
 }
 
 function init() {
