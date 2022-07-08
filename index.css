@@ -17,6 +17,10 @@ body{
 
 .title h1{
     text-align: center;
+    border-color: black;
+    text-align: right;
+
+
 }
 
 input{
