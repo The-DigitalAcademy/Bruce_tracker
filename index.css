@@ -4,13 +4,13 @@
 }
 
 body{
-    background: rgb(240, 243, 243);
+    background: rgb(24 0, 243, 243);
 }
 
 .app{
     width: 500px;
     height: 740px;
-    box-shadow: 0 8px 10px rgba(179, 239, 244, 0.457);
+    box-shadow: 0 8px 10px rgba(164, 216, 221, 0.457);
     margin-left: 600px;
     margin-top: 50px;
 }
@@ -58,6 +58,7 @@ button{
 
 button:hover{
     transform: scale(1.1);
+
 }
 
 .table{
