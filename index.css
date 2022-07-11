@@ -95,4 +95,9 @@ button:hover{
 
 }
 
-
+.container{
+    background-color: white;
+    padding-top: 2rem;
+    width: auto;
+    height: 2rem;
+}
