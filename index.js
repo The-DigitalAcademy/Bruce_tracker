@@ -1,10 +1,9 @@
 var state = {
-    balance: 0,
+    balance: 6000,
     income: 0,
     expense: 0,
     names: [],
-    Transaction:
-    [
+    Transaction:[
          {name:'name', amount: 0, type: 'income'},  
          {name:'name', amount: 0, type: 'expense'},         
     ]
