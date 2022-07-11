@@ -3,7 +3,8 @@ var state = {
     income: 0,
     expense: 0,
     names: [],
-    history: [
+    Transaction:
+    [
          {name:'name', amount: 0, type: 'income'},  
          {name:'name', amount: 0, type: 'expense'},         
     ]
