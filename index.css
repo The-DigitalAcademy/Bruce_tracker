@@ -85,3 +85,8 @@ button:hover{
     border: border;
 
 }
+
+.row{
+    align-items: center;
+    margin-left: 200px;
+}
