@@ -54,7 +54,7 @@ function addTransaction(name, amount, type){
 
     if (name !== '' && amount !== ''){
         // console.log('income', nameInputEl.value, amountInputEl.value);
-        var 
+        var Transaction = {id:uniqueId(), name: name, amount: parseInt(amount), type: type}; 
     }
 
 }
