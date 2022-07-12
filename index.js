@@ -16,6 +16,29 @@ var balanceEl = document.guerySelector('#balance');
 var incomeEl = document.guerySelector('#income');
 var expenseEl = document.guerySelector('#expense');
 var transactionEl = document.guerySelector('#transaction');
+var incomeBtnEl = document.guerySelector('#incomeBtn');
+var expenseBtnEl = document.guerySelector('#expenseBtn');
+var nameInputEl = document.guerySelector('#name');
+var amountInputEl = document.guerySelector('#amount');
+
+
+function init(){
+    var localstate = JSON.parse(localStorage.getItem)('expenseTrackyourbudget');
+
+    if (localstate !==null){
+        state = localstate;
+    }
+    uppdateState();
+    initListeners();
+    //render();
+}
+
+
+
+
+
+
+
 
 
 function incomeAdd() {
