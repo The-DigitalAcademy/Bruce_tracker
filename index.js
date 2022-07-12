@@ -4,7 +4,12 @@ var state = {
     expense: 0,
     names: [],
     Transaction:[
-       
+       // {id: uniqueId(), name: 'salary', amount: 6000, type: 'income'},
+      // {id: uniqueId(), name: 'Electricity', amount: 240, type: 'expense'},
+       // {id: uniqueId(), name: 'Food', amount: 250, type: 'expense'},
+    ]
+
+
 }
 
 var balanceEl = document.getElementById('balance');
