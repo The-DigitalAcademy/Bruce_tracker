@@ -45,7 +45,18 @@ function initListeners(){
 //Dry -Do not repeat yourself
 
 function onAddIncomeClick(){
-    addTransaction(nameInputEl.value, amountInputEl.value, 'income')
+    addTransaction(nameInputEl.value, amountInputEl.value, 'income');
+}
+
+function addTransaction(name, amount, type){
+    var name = nameInputEl.value;
+    var amount = amountInput.value;
+
+    if (name !== '' && amount !== ''){
+        // console.log('income', nameInputEl.value, amountInputEl.value);
+        var 
+    }
+
 }
 
 
