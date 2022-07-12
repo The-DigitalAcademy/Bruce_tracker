@@ -34,7 +34,12 @@ function init(){
 }
 
 function uniqueId(){
-    
+    return Math.round(Math.random()*1000000);
+}
+
+function initListeners(){
+    incomeBtnEl.addEventListener('click', onAdddIncomeClick);
+    ExpenseBtnEl.addEventListener('click', onAdddExpenseClick);
 }
 
 
@@ -46,17 +51,7 @@ function uniqueId(){
 
 
 
-
-    
-}
-
-
-
-
-
-
-
-
+{}
 
 function incomeAdd() {
 var names = document.getElementById('name').value
