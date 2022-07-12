@@ -33,8 +33,7 @@ function init(){
     //render();
 }
 
-function unitListeners(){
-    incomeBtnEl.addEventListener
+
 
 
 
