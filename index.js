@@ -4,9 +4,7 @@ var state = {
     expense: 0,
     names: [],
     Transaction:[
-         {name:'name', amount: 0, type: 'income'},  
-         {name:'name', amount: 0, type: 'expense'},         
-    ]
+       
 }
 
 var balanceEl = document.getElementById('balance');
