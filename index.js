@@ -42,6 +42,11 @@ function initListeners(){
     ExpenseBtnEl.addEventListener('click', onAdddExpenseClick);
 }
 
+//Dry -Do not repeat yourself
+
+function onAddIncomeClick(){
+    addTransaction(nameInputEl.value, amountInputEl.value, 'income')
+}
 
 
 
