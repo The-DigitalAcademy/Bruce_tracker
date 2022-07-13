@@ -100,7 +100,11 @@ function updateState(){
 
     for (var i = 0; i < state.transactions.length; i++){
         item = state.transactions[i];
-        
+
+        if (item.type === 'income'){
+            
+        }
+
     }
 }
 
