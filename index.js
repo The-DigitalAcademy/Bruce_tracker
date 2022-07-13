@@ -73,6 +73,18 @@ function onAdddExpenseClick(){
     addTransaction(nameInputEl.value, amountInputEl.value, 'expense');
 }
 
+function  onDeleteClick(event){
+    var id =parseInt(event.target.getAttribute('data-id'));
+    var deleteIndex;
+    for (let i = 0; i <state.transactions.length; i++) {
+        if(state.Transactions[i].id === id) {
+
+       
+            deleteIndex = i;
+            break;
+        }
+        
+}
 
 
 
@@ -97,7 +109,4 @@ function expenseAdd() {
 function init() {
 //   console.log('sine')
 }
-
-init();
-
 
