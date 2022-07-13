@@ -57,6 +57,12 @@ function addTransaction(name, amount, type){
         var Transaction = {id:uniqueId(), name: name, amount: parseInt(amount), type: type}; 
 
         state.transactions.push(transaction);
+
+        //console.log(state);
+        uppdateState();
+    }
+    else{
+        alert("Please see the enter valid data");
     }
 
 }
