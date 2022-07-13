@@ -86,9 +86,16 @@ function  onDeleteClick(event){
         
 }
 
+state.transactions.splice(deleteIndex, 1);
+
+updateState();
+
+}
 
 
 
+
+ 
 
 
 
