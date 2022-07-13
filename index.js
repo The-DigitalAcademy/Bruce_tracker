@@ -92,6 +92,18 @@ updateState();
 
 }
 
+function updateState(){
+    var balance = 0;
+    income = 0;
+    expense = 0;
+    item;
+
+    for (var i = 0; i < state.transactions.length; i++){
+        item = state.transactions[i];
+        
+    }
+}
+
 
 
 
