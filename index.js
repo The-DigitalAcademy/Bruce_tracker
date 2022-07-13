@@ -65,6 +65,12 @@ function addTransaction(name, amount, type){
         alert("Please see the enter valid data");
     }
 
+    nameInputEl.value = '';
+    amountInputEl.value ='';
+}
+
+function onAdddExpenseClick(){
+    addTransaction(nameInputEl.value, amountInputEl.value, 'expense');
 }
 
 
