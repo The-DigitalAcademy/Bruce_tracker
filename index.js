@@ -155,14 +155,10 @@ function render(){
         btnEl.innerHTML = 'X';
 
         btnEl.addEventListener('click', onDeleteClick);
-        
 
+        containerEl.appendChild(btnEl);
 
-        
-
-
-
-
+        transactionEl.appendChild(containerEl);
 
     }
 
