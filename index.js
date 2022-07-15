@@ -143,7 +143,9 @@ function render(){
         if (item.type === 'income'){
             amountEl.classList.add('income-amt');
         }
-        
+        else if (item.type === 'expense') {
+            amountEl.classList.add('expense-amt');
+        }
 
 
 
