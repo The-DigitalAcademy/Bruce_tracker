@@ -138,6 +138,12 @@ function render(){
 
         transactionEl.appendChild(transactionEl);
 
+        containerEl = document.createElement('div');
+        amountEl = document.createElement('span');
+        if (item.type === 'income'){
+            amountEl.classList.add('income-amt');
+        }
+        
 
 
 
