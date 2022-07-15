@@ -146,6 +146,12 @@ function render(){
         else if (item.type === 'expense') {
             amountEl.classList.add('expense-amt');
         }
+        amountEl.innerHTML = `R${item.amount}`;
+
+        containerEl.appendChild(amountEl);
+        
+
+        
 
 
 
