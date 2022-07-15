@@ -116,7 +116,7 @@ function updateState(){
     state.income = income;
     state.expense = expense;
 
-
+    localStorage.setitem('expenseTrackerState',JSON.stringify(state));
 
 
 
