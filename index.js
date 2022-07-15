@@ -122,6 +122,16 @@ function updateState(){
 
 }
 
+function render(){
+    balanceEl.innerHTML = `R${state.balance}`;
+    incomeEl.innerHTML = `R${state.income}`;
+    expenseEl.innerHTML = `R${state.expense}`;
+}
+
+
+
+
+
 
 
 
