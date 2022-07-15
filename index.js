@@ -154,6 +154,8 @@ function render(){
         btnEl.setAttribute('data-id', item.id);
         btnEl.innerHTML = 'X';
 
+        btnEl.addEventListener('click', onDeleteClick);
+        
 
 
         
