@@ -131,6 +131,19 @@ function render(){
     
     transactionEl.innerHTML ='';
 
+    for (let i = 0; i < state.transactions.length; i++){
+        item = state.transactions[i];
+        transactionEl = document.createElement('li');
+        transactionEl.append(item.name);
+
+        transactionEl.appendChild(transactionEl);
+
+
+
+
+
+
+    }
 
 
 
