@@ -126,6 +126,14 @@ function render(){
     balanceEl.innerHTML = `R${state.balance}`;
     incomeEl.innerHTML = `R${state.income}`;
     expenseEl.innerHTML = `R${state.expense}`;
+
+    var transactionEl, containerEl, amountEl, item, btnEl;
+    
+    transactionEl.innerHTML ='';
+
+
+
+
 }
 
 
