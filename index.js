@@ -149,7 +149,10 @@ function render(){
         amountEl.innerHTML = `R${item.amount}`;
 
         containerEl.appendChild(amountEl);
+
+        btnEl = document.createElement('button');
         
+
 
         
 
