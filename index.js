@@ -101,10 +101,12 @@ function updateState(){
     for (var i = 0; i < state.transactions.length; i++){
         item = state.transactions[i];
 
-        if (item.type === 'income'){
+        if (item.type === 'income') {
             income += item.amount;
         }
-
+        else if (item.type === 'expense') {
+            expense += item.amount;
+        }
     }
 }
 
