@@ -1,7 +1,7 @@
 var state = {
     balance: 6000,
-    income: 0,
-    expense: 0,
+    income: 200,
+    expense: 1500,
     names: [],
     Transaction:[
        // {id: uniqueId(), name: 'salary', amount: 6000, type: 'income'},
@@ -12,17 +12,21 @@ var state = {
 
 }
 
-var balanceEl = document.guerySelector('#balance');
-var incomeEl = document.guerySelector('#income');
-var expenseEl = document.guerySelector('#expense');
-var transactionEl = document.guerySelector('#transaction');
-var incomeBtnEl = document.guerySelector('#incomeBtn');
-var expenseBtnEl = document.guerySelector('#expenseBtn');
-var nameInputEl = document.guerySelector('#name');
-var amountInputEl = document.guerySelector('#amount');
+var balanceEl = document.guerySelector('balance');
+var incomeEl = document.guerySelector('income');
+var expenseEl = document.guerySelector('expense');
+var transactionEl = document.guerySelector('transaction');
+
 
 
 function displayscreen()
+    income.innerHTML = `R${state.income}`
+    expense.innerHTML = `R${state.expense}`
+    expense.innerHTML = `R${state.expense}`
+
+    
+
+    displayscreen()
 
 
 function init(){
