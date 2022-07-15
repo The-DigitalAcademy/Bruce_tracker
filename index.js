@@ -102,7 +102,7 @@ function updateState(){
         item = state.transactions[i];
 
         if (item.type === 'income'){
-            
+            income += item.amount;
         }
 
     }
