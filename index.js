@@ -111,6 +111,11 @@ function updateState(){
 
     balance = income - expense;
 
+    // console.log(balance, income, expense);
+    state.balance = balance;
+    state.income = income;
+    state.expense = expense;
+
 
 
 
