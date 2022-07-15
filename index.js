@@ -118,10 +118,7 @@ function updateState(){
 
     localStorage.setitem('expenseTrackerState',JSON.stringify(state));
 
-
-
-
-
+    render();
 
 }
 
