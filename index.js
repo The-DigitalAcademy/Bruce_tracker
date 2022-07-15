@@ -22,6 +22,9 @@ var nameInputEl = document.guerySelector('#name');
 var amountInputEl = document.guerySelector('#amount');
 
 
+function displayscreen()
+
+
 function init(){
     var localstate = JSON.parse(localStorage.getItem)('expenseTrackyourbudget');
 
