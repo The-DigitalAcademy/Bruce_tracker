@@ -108,6 +108,16 @@ function updateState(){
             expense += item.amount;
         }
     }
+
+    balance = income - expense;
+
+
+
+
+
+
+
+
 }
 
 
