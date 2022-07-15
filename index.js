@@ -151,7 +151,9 @@ function render(){
         containerEl.appendChild(amountEl);
 
         btnEl = document.createElement('button');
-        
+        btnEl.setAttribute('data-id', item.id);
+        btnEl.innerHTML = 'X';
+
 
 
         
