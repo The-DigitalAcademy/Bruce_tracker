@@ -25,7 +25,15 @@ console.log(stateInput);
 }
 
 function expenseAdd() {
-// console.log('Bruce Morakane')
+stateInput = document.getElementById('stateInput').value
+
+
+console.log(stateInput);
+}
+
+function stateInput(){
+    amountS = number (document.getElementById('amount').value);
+    inputS = document.getElementById('itemsName').value;
 }
 
 function init() {
