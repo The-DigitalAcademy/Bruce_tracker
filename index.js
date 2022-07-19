@@ -1,5 +1,5 @@
 var state = {
-    balance: 0,
+    balance: 5000,
     income: 0,
     expense: 0,
     names: [],
@@ -8,6 +8,8 @@ var state = {
          {name:'name', amount: 0, type: 'expense'},         
     ]
 }
+
+var table;
 
 var balanceEl = document.getElementById('balance');
 var incomeEl = document.getElementById('income');
@@ -28,7 +30,47 @@ function expenseAdd() {
 }
 
 function init() {
-//   console.log('sine')
+table = document.getElementById('table');
+
+table.innerHTML = `<table>
+
+<thead>
+<tr>
+
+     <th scope="col">Info</th><br>
+     <th scope="col"> Expense</th><br>
+     <th scope="col">Income</th>
+     <th scope="col">Value</th>
+   </tr>
+ </thead>
+
+</table>`
+
+for (let i = 0; i < history.length; i++) {
+    table.innerHTML += `<table></table>
+    <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Electrcity</td>
+               <td> salary</td>
+                <td>R1000</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Food</td>
+                <td>product</td>
+                <td>R250</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Insurance</td>
+                <td>R750</td>
+              </tr>
+            </tbody>
+    
+    </table>`
+    
+}
 }
 
 init();

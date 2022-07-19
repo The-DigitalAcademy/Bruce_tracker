@@ -5,6 +5,7 @@
 
 body{
     background: rgb(24 0, 243, 243);
+   
 }
 
 .app{
@@ -61,11 +62,7 @@ button{
 
 button:hover{
     transform: scale(1.1);
-<<<<<<< HEAD
     
-=======
-
->>>>>>> edc7cf25d076ddfc6f8516661d2adde142f40eee
 }
 
 .table{
