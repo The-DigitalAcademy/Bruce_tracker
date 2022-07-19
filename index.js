@@ -19,6 +19,7 @@ var transactionEl = document.getElementById('transaction');
 
 function incomeAdd() {
 stateInput = document.getElementById('stateInput').value
+function addIncome
 
 
 console.log(stateInput);
@@ -31,10 +32,7 @@ stateInput = document.getElementById('stateInput').value
 console.log(stateInput);
 }
 
-function stateInput(){
-    amountS = number (document.getElementById('amount').value);
-    inputS = document.getElementById('itemsName').value;
-}
+
 
 function init() {
 table = document.getElementById('table');
