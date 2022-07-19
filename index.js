@@ -37,10 +37,10 @@ table.innerHTML = `<table>
 <thead>
 <tr>
 
-     <th scope="col">Info</th><br>
-     <th scope="col"> Expense</th><br>
-     <th scope="col">Income</th>
-     <th scope="col">Value</th>
+     <th>Info</th>
+     <th>Expense</th>
+     <th>Income</th>
+     <th>Value</th>
    </tr>
  </thead>
 
