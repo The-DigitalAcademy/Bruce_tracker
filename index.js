@@ -50,20 +50,21 @@ for (let i = 0; i < history.length; i++) {
     table.innerHTML += `<table></table>
     <tbody>
               <tr>
-                <th scope="row">1</th>
+                <th  scope="row">1</th>
                 <td>Electrcity</td>
                <td> salary</td>
                 <td>R1000</td>
               </tr>
               <tr>
-                <th scope="row">2</th>
+                <th  scope="row">2</th>
                 <td>Food</td>
                 <td>product</td>
                 <td>R250</td>
               </tr>
               <tr>
                 <th scope="row">3</th>
-                <td colspan="2">Insurance</td>
+                <td>Insurance</td>
+                <td>Rent</td>
                 <td>R750</td>
               </tr>
             </tbody>
