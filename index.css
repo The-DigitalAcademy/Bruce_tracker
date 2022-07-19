@@ -4,19 +4,22 @@
 }
 
 body{
-    background: rgb(240, 243, 243);
+    background: rgb(24 0, 243, 243);
 }
 
 .app{
     width: 500px;
     height: 740px;
-    box-shadow: 0 8px 10px rgba(179, 239, 244, 0.457);
+    box-shadow: 0 8px 10px rgba(164, 216, 221, 0.457);
     margin-left: 600px;
     margin-top: 50px;
 }
 
 .title h1{
+    border-color: black;
     text-align: center;
+
+
 }
 
 input{
@@ -25,11 +28,11 @@ input{
     justify-content: center;
     width: 400px;
     height: 30px;
-    border-radius: 10px;
-    border: none;
     outline: none;
-    padding: 1px;
-    text-align: center;
+    padding:1px 1rem;
+    margin: center;
+   
+   
 }
 
 .details h2{
@@ -58,11 +61,16 @@ button{
 
 button:hover{
     transform: scale(1.1);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> edc7cf25d076ddfc6f8516661d2adde142f40eee
 }
 
 .table{
     border: solid;
+    align-items: center;
 
 }
 
@@ -81,3 +89,13 @@ button:hover{
     border: border;
 
 }
+
+.row{
+    align-items: center;
+    margin-left: 200px;
+    width: 2rem;
+    height: 2rem;
+    margin: 2rem;
+
+}
+
