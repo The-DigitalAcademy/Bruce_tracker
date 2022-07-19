@@ -18,11 +18,10 @@ var transactionEl = document.getElementById('transaction');
 
 
 function incomeAdd() {
-var names = document.getElementById('name').value
+stateInput = document.getElementById('stateInput').value
 
-names.push('name')
 
-console.log(name)
+console.log(stateInput);
 }
 
 function expenseAdd() {
