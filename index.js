@@ -1,10 +1,37 @@
-var state ={
-    expense:200,
-    income:1000,
-    balance:6000,
-item[
-    {item:'salary',type:'income', amount:'R6000'}
-    {item:'electrcity',type:'Expense',amount:'R750'}
-    {item:'insurance',type:'expense',amount:'R250'}
-]
+var state = {
+    balance: 0,
+    income: 0,
+    expense: 0,
+    names: [],
+    history: [
+         {name:'name', amount: 0, type: 'income'},  
+         {name:'name', amount: 0, type: 'expense'},         
+    ]
 }
+
+var balanceEl = document.getElementById('balance');
+var incomeEl = document.getElementById('income');
+var expenseEl = document.getElementById('expense');
+var transactionEl = document.getElementById('transaction');
+
+
+function incomeAdd() {
+var names = document.getElementById('name').value
+
+names.push('name')
+
+console.log(name)
+}
+
+function expenseAdd() {
+// console.log('Bruce Morakane')
+}
+
+function init() {
+//   console.log('sine')
+}
+
+init();
+
+
+
