@@ -21,8 +21,6 @@ function incomeAdd() {
 stateInput = document.getElementById('stateInput').value
 function addIncome
 
-
-console.log(stateInput);
 }
 
 function expenseAdd() {
