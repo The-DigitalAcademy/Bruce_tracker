@@ -1,33 +1,29 @@
 var state = {
-    balance: 0,
+    balance: 5000,
     income: 0,
     expense: 0,
-    history: [
-         {name:'name', amount: 0, type: 'income'},  
-         {name:'name', amount: 0, type: 'expense'},         
-    ]
+    history: []
 }
 
-var table;
+var details;
+var moneyP;
+var tableShow;
 
 function input() {
-stateInput = document.getElementById('stateInput').value
-money = Number (document.getElementById('money').value)
+details = document.getElementById('stateInput').value
+moneyP = Number (document.getElementById('money').value)
   
 } 
-
-
 
 function incomeAdd() {
   input();
 
-  if (displayscreen(money) && displayscreen(stateInput)) {
+  if (displayscreen(moneyP) && displayscreen(details)) {
     history.push({
-    info: history.length + 1,
-     Expense: stateInput,
+     Expense: details,
      Income: 'Income',
-     Value: money,
-    })
+     Value: moneyP,
+    });
   } 
   init();
 
@@ -36,42 +32,36 @@ function incomeAdd() {
 function expenseAdd() {
   input();
 
-  if (displayscreen(money) && displayscreen(stateInput)) {
-      history.push({
-      info: history.length + 1,
-      Expense: stateInput,
-      Income: 'Expense',
-      Value: money,
-    });
+  if (displayscreen(moneyP) && displayscreen(details)) {
+    history.push({
+     Expense: details,
+     Income: 'Expense',
+     Value: moneyP,
+    })
   } 
   init();
 
-  console.log(history);
-
 }
 
-function Alldelete() {
-  stateInput = document.getElementById('Alldelete').value
 
-  console.log('Alldelete');
-}
 
-function Alldelete() {}
+
+
+
 
 
 function init() {
 var balanceMoney = document.getElementById('balance');
-var income = document.getElementById('income');
-var expense = document.getElementById('expense');
+// var incomeMoney = document.getElementById('income');
+// var expenseMoney = document.getElementById('expense');
 
-table = document.getElementById('table');
+tableShow = document.getElementById('tableShow');
 
-table.innerHTML = `<table>
+tableShow.innerHTML = `<table>
 
 <thead>
 <tr>
 
-     <th>Info</th>
      <th>Expense</th>
      <th>Income</th>
      <th>Value</th>
@@ -80,14 +70,13 @@ table.innerHTML = `<table>
 
 </table>`
 
-for (let i = 0; i < history.length; i++) {
-    table.innerHTML += `<table>
+for (let i = 0; i < state.history.length; i++) {
+    tableShow.innerHTML += `<table>
     <tbody>
               <tr>
-                <td scope="row">${history[i].info}</td>
-                <td>${history[i].expense}</td>
-               <td>${history[i].income}</td>
-                <td>${history[i].value}</td>
+                <td>${state.history[i].expense}</td>
+               <td>${state.history[i].income}</td>
+                <td>${state.history[i].value}</td>
               </tr>
             </tbody>
     
