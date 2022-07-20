@@ -3,6 +3,7 @@ var state = {
     income: 0,
     expense: 0,
     names: [],
+    item:[],
     history: [
          {name:'name', amount: 0, type: 'income'},  
          {name:'name', amount: 0, type: 'expense'},         
@@ -32,26 +33,36 @@ stateInput = document.getElementById('stateInput').value
 console.log(stateInput);
 }
 
+function Alldelete() {
+  stateInput = document.getElementById('Alldelete').value
+
+  console.log('Alldelete');
+}
+
+function Alldelete() {
+  
+}
 //reminder about function onAddexpense
 function onAddExpenseClick(){
   addtransaction(nameInputEl.value, amountInputEl.value, 'expense');
 }
 
 //remind disturd function onDeleteClick
-function onDeleteClick(event){
+function onAlldeleteClick(event){
   var id = parseInt(event.target.getAttributr('data-id'));
-  var deleteIndex;
+  var AlldeleteIndex;
   for (let i = 0; i < state.addtransactions.length; i++) {
     if (state.transactions[i].id === id){
-      deleteIndex = i;
+      AlldeleteIndex = i;
       break;
     }
  
   }
 
-  state.transactions.splice(deleteIndex, 1);
+  state.transactions.splice(AlldeleteIndex, 1);
 
   updateState();
+  Alldelete();
 }
 
 
