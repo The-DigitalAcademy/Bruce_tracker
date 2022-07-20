@@ -1,9 +1,7 @@
 var state = {
-    balance: 5000,
+    balance: 0,
     income: 0,
     expense: 0,
-    names: [],
-    item:[],
     history: [
          {name:'name', amount: 0, type: 'income'},  
          {name:'name', amount: 0, type: 'expense'},         
@@ -12,25 +10,44 @@ var state = {
 
 var table;
 
-var balanceEl = document.getElementById('balance');
-var incomeEl = document.getElementById('income');
-var expenseEl = document.getElementById('expense');
-var transactionEl = document.getElementById('transaction');
+function input() {
+stateInput = document.getElementById('stateInput').value
+money = Number (document.getElementById('money').value)
+  
+} 
+
 
 
 function incomeAdd() {
-stateInput = document.getElementById('stateInput').value
+  input();
 
-
-console.log(stateInput);
+  if (displayscreen(money) && displayscreen(stateInput)) {
+    history.push({
+    info: history.length + 1,
+     Expense: stateInput,
+     Income: 'Income',
+     Value: money,
+    })
+  } 
+  init();
 
 }
 
 function expenseAdd() {
-stateInput = document.getElementById('stateInput').value
+  input();
 
+  if (displayscreen(money) && displayscreen(stateInput)) {
+      history.push({
+      info: history.length + 1,
+      Expense: stateInput,
+      Income: 'Expense',
+      Value: money,
+    });
+  } 
+  init();
 
-console.log(stateInput);
+  console.log(history);
+
 }
 
 function Alldelete() {
@@ -39,34 +56,14 @@ function Alldelete() {
   console.log('Alldelete');
 }
 
-function Alldelete() {
-  
-}
-//reminder about function onAddexpense
-function onAddExpenseClick(){
-  addtransaction(nameInputEl.value, amountInputEl.value, 'expense');
-}
-
-//remind disturd function onDeleteClick
-function onAlldeleteClick(event){
-  var id = parseInt(event.target.getAttributr('data-id'));
-  var AlldeleteIndex;
-  for (let i = 0; i < state.addtransactions.length; i++) {
-    if (state.transactions[i].id === id){
-      AlldeleteIndex = i;
-      break;
-    }
- 
-  }
-
-  state.transactions.splice(AlldeleteIndex, 1);
-
-  updateState();
-  Alldelete();
-}
+function Alldelete() {}
 
 
 function init() {
+var balanceMoney = document.getElementById('balance');
+var income = document.getElementById('income');
+var expense = document.getElementById('expense');
+
 table = document.getElementById('table');
 
 table.innerHTML = `<table>
@@ -84,31 +81,21 @@ table.innerHTML = `<table>
 </table>`
 
 for (let i = 0; i < history.length; i++) {
-    table.innerHTML += `<table></table>
+    table.innerHTML += `<table>
     <tbody>
               <tr>
-                <th  scope="row">1</th>
-                <td>Electrcity</td>
-               <td> salary</td>
-                <td>R1000</td>
-              </tr>
-              <tr>
-                <th  scope="row">2</th>
-                <td>Food</td>
-                <td>product</td>
-                <td>R250</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Insurance</td>
-                <td>Rent</td>
-                <td>R750</td>
+                <td scope="row">${history[i].info}</td>
+                <td>${history[i].expense}</td>
+               <td>${history[i].income}</td>
+                <td>${history[i].value}</td>
               </tr>
             </tbody>
     
     </table>`
     
 }
+
+balanceMoney.innerHTML = `R${state.balance}`;
 }
 
 init();
