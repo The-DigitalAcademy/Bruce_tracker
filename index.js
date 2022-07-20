@@ -19,7 +19,7 @@ var transactionEl = document.getElementById('transaction');
 
 function incomeAdd() {
 stateInput = document.getElementById('stateInput').value
-function addIncome
+
 
 }
 
