@@ -21,6 +21,8 @@ function incomeAdd() {
 stateInput = document.getElementById('stateInput').value
 
 
+console.log(stateInput);
+
 }
 
 function expenseAdd() {
@@ -30,6 +32,27 @@ stateInput = document.getElementById('stateInput').value
 console.log(stateInput);
 }
 
+//reminder about function onAddexpense
+function onAddExpenseClick(){
+  addtransaction(nameInputEl.value, amountInputEl.value, 'expense');
+}
+
+//remind disturd function onDeleteClick
+function onDeleteClick(event){
+  var id = parseInt(event.target.getAttributr('data-id'));
+  var deleteIndex;
+  for (let i = 0; i < state.addtransactions.length; i++) {
+    if (state.transactions[i].id === id){
+      deleteIndex = i;
+      break;
+    }
+ 
+  }
+
+  state.transactions.splice(deleteIndex, 1);
+
+  updateState();
+}
 
 
 function init() {
