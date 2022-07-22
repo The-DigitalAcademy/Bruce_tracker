@@ -8,6 +8,7 @@ var state = {
 var details;
 var moneyP;
 var tableShow;
+var totalIncome;
 
 
 function input() {
@@ -16,6 +17,7 @@ moneyP = Number (document.getElementById('money').value)
   
 } 
 
+// add income function
 function incomeAdd() {
   input();
 
@@ -25,11 +27,17 @@ function incomeAdd() {
      Income: 'Income',
      Value: moneyP,
     });
-  } 
+
+    calculate();
+    AllDeleteInput();
+  } else{
+    alert('All input are required');
+  }
   init();
 
 }
 
+// add expense function
 function expenseAdd() {
   input();
 
@@ -39,9 +47,28 @@ function expenseAdd() {
      Income: 'Expense',
      Value: moneyP,
     })
-  } 
+    
+    calculate();
+    AllDeleteInput();
+  } else{
+    alert('All input are required');
+  }
   init();
 
+}
+
+// put input data into variables
+function getUserInput(){
+  amount = Number(document.getElementById('amount').value);
+  AllDeleteName = document.getElementById(' AllDeleteName').value; 
+}
+
+// display tableshow data
+function displayTableData() {
+  var totalIncome = document.getElementById('totalIncome');
+  var totalExpense = document.getElementById('totalExpense');
+  var totalMoneyP = document.getElementById(' totalMoneyP');
+  tableShow = document.getElementById('tableShow');
 }
 
 
@@ -63,10 +90,10 @@ tableShow.innerHTML = `<table>
 <thead>
 <tr>
 
-     <th>Expense</th>
+     <th>E xpense</th>
      <th>Income</th>
      <th>Value</th>
-   </tr>
+   </tr>;
  </thead>
 
 </table>`
@@ -78,6 +105,8 @@ for (let i = 0; i < state.history.length; i++) {
                 <td>${state.history[i].expense}</td>
                <td>${state.history[i].income}</td>
                 <td>${state.history[i].value}</td>
+                <th>${state.history[i].value}</td>
+                <td><button class="Alldelete" onClick="Alldelete(${i})">Alldelete</button></td>
               </tr>
             </tbody>
     
@@ -86,6 +115,11 @@ for (let i = 0; i < state.history.length; i++) {
 }
 
 balanceMoney.innerHTML = `R${state.balance}`;
+expenseMoney.innerHTML = `R${state.expense}`;
+incomeMoney.innerHTML = `R${state.income}`;
+historyMoney.innerHTML = `R${state.history}`;
+AlldeleteMoney.innerHTML = `R${state.Alldelete}`;
+
 }
 
 init();
