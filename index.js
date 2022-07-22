@@ -1,5 +1,5 @@
 var state = {
-    balance: 8000,
+    balance: 500,
     income: 0,
     expense: 0,
     history: []
@@ -8,6 +8,7 @@ var state = {
 var details;
 var moneyP;
 var tableShow;
+
 
 function input() {
 details = document.getElementById('stateInput').value
