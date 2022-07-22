@@ -87,28 +87,24 @@ tableShow = document.getElementById('tableShow');
 
 tableShow.innerHTML = `<table>
 
-<thead>
 <tr>
 
-     <th>E xpense</th>
+     <th>Expense</th>
      <th>Income</th>
      <th>Value</th>
    </tr>;
- </thead>
 
 </table>`
 
 for (let i = 0; i < state.history.length; i++) {
     tableShow.innerHTML += `<table>
-    <tbody>
               <tr>
-                <td>${state.history[i].expense}</td>
+                <th>${state.history[i].expense}</th>
                <td>${state.history[i].income}</td>
-                <td>${state.history[i].value}</td>
-                <th>${state.history[i].value}</td>
+                <td>R${state.history[i].value}</td>
                 <td><button class="Alldelete" onClick="Alldelete(${i})">Alldelete</button></td>
               </tr>
-            </tbody>
+  
     
     </table>`
     
@@ -123,6 +119,51 @@ AlldeleteMoney.innerHTML = `R${state.Alldelete}`;
 }
 
 init();
+
+// calculate totals
+// function calculate() {
+//   income = 0;
+//   expense = 0;
+//   total = 0;
+// }
+
+// for (let i = 0; i < tableShow.length; i++) {
+//   if (tableShow[i].type == 'income') {
+//     income += tableShow[i].amount;
+//   }
+//   if (tableShow[i].type == 'expense') {
+//     expense += tableShow[i].amount;
+//   }
+  
+//   total = income - expense;
+// }
+
+// All delete from the table
+// function Alldelete(index) {
+//   if (
+//     window.confirm(
+//       `All delete: ${tableShow[index].id + ':' + tableShow[index].transaction}?`
+//     )
+//   ) {
+//     tableShow.splice(index, 1);
+//     calculate();
+//     displayTableData();
+//   }
+  
+// }
+
+// clear table
+// function Alldelete() {
+//   if (Alldelete.length == 0) {
+//     alert('All delete table is already empty');
+//     return;
+//   }
+//   if (window.confirm('are you make sure to all delete transaction table')){
+//     tableShow = [];
+//     calculate();
+//     displayTableData();
+//   }
+// }
 
 
 
