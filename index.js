@@ -1,6 +1,6 @@
 var state = {
-    balance: 500,
-    income: 0,
+    balance: 6000,
+    income: ,
     expense: 0,
     history: []
 }
