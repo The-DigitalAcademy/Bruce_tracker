@@ -1,6 +1,6 @@
 var state = {
     balance: 6000,
-    income: ,
+    income: 1,
     expense: 0,
     history: []
 }
@@ -16,6 +16,10 @@ details = document.getElementById('stateInput').value
 moneyP = Number (document.getElementById('money').value)
   
 } 
+
+function input() {
+  details = document.getElementById('stateInput').value
+  name = name (document.getElementById('name').value)
 
 // add income function
 function incomeAdd() {
