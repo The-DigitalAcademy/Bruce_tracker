@@ -1,6 +1,6 @@
 var state = {
-    balance: 6000,
-    income: 1,
+    balance: 8000,
+    income: 0,
     expense: 0,
     history: []
 }
@@ -79,8 +79,8 @@ function displayTableData() {
 
 function init() {
 var balanceMoney = document.getElementById('balance');
-// var incomeMoney = document.getElementById('income');
-// var expenseMoney = document.getElementById('expense');
+var incomeMoney = document.getElementById('income');
+var expenseMoney = document.getElementById('expense');
 
 tableShow = document.getElementById('tableShow');
 
