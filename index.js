@@ -68,7 +68,6 @@ function displayTableData() {
   var totalExpense = document.getElementById('totalExpense');
   var totalMoneyP = document.getElementById(' totalMoneyP');
   tableShow = document.getElementById('tableShow');
-  var totalMoneyP = document.getElementById('totalMoneyP');
 }
 
 
@@ -77,11 +76,11 @@ var balanceMoney = document.getElementById('balance');
 var incomeMoney = document.getElementById('income');
 var expenseMoney = document.getElementById('expense');
 
+
 tableShow = document.getElementById('tableShow');
 
 tableShow.innerHTML = `<table>
-
-<tr>
+< tr>
 
      <th>Expense</th>
      <th>Income</th>
