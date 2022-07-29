@@ -10,11 +10,12 @@
 </head>
 <body>
     <div class="app">
+      <div class="input">
         <div class="title"><h1>Expense Track your budget</h1></div>
         <div class="hr"></div>
         <div class="create">
             <input type="text" id="stateInput" placeholder="Enter your name "><br>
-            <button  class="expenseBtn" type="button" onclick="expenseAdd()"> - Expense</button>
+            <button  class="expenseBtn" onclick="expenseAdd()"> - Expense</button>
         </div>
 
         <div class="h3 d-grid gap-2 col-6 mx-auto">
@@ -28,10 +29,26 @@
           <div id="Expense">R400</div>
    </div>
 
+        <div class="display">
+    <h2 class="totalIncome">
+      Total Income is R<span id="totalIncome"></span>
+    </h2>
+    <h2 class="totalExpence">
+      Total Expence is R<span id="totalExpence"></span>
+    </h2>
+    <h2 class="totalMoney">
+      Total Money is R<span id="totalMoney"></span>
+    </h2>
+  </div>
+
+    </div>
         <div class="fill">
             <input type="number" id="money"placeholder="Enter your amount"><br>
-            <button class="incomeBtn" type="button" onclick="incomeAdd()"> + Income</button>
-       
+            <button class="incomeBtn"onclick="incomeAdd()"> + Income</button>
+       </div>
+       <div class="tableshow">
+        <table border = "1" id="tableshow">
+          </table>
           </div>
           <br>
 
@@ -52,6 +69,8 @@
       </button>
    
 </div>
+
+
 
 </div>
        
