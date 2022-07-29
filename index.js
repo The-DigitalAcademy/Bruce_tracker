@@ -68,6 +68,7 @@ function displayTableData() {
   var totalExpense = document.getElementById('totalExpense');
   var totalMoneyP = document.getElementById(' totalMoneyP');
   tableShow = document.getElementById('tableShow');
+  var totalMoneyP = document.getElementById('totalMoneyP');
 }
 
 
