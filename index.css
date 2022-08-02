@@ -79,6 +79,7 @@ button:hover{
     height: 2rem;
     background-color: black;
     border: border;
+  
 
 }
 
@@ -98,7 +99,7 @@ button:hover{
 
     
 }
- table, th, td{
+ table, th,tr{
     width: 450px;
     border:solid 1px;
  }

@@ -16,6 +16,25 @@ details = document.getElementById('stateInput').value
 moneyP = Number (document.getElementById('money').value)
   
 } 
+
+function input() {
+  totalIncome = document.getElementById('stateInput').value
+  input();
+
+  f (displayscreen(totalIncome) && displayscreen(totalIncome)) 
+    history.push({
+     Expense: details,
+     Income: 'Income',
+     Value: moneyP,
+     totalIncome,
+    });
+
+    calculate();
+    AllDeleteInput();
+  
+  init();
+
+}
 // add income function
 function incomeAdd() {
   input();
