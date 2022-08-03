@@ -17,69 +17,38 @@ moneyP = Number (document.getElementById('money').value)
   
 } 
 
-function input() {
-  totalIncome = document.getElementById('stateInput').value
+function incomeAdd() {
   input();
 
-  if (displayscreen(totalIncome) && displayscreen(totalIncome)) 
+  if (displayscreen(moneyP) && displayscreen(details)) {
     history.push({
      Expense: details,
      Income: 'Income',
      Value: moneyP,
-     totalIncome,
     });
 
     calculate();
+  }
   init();
 
 }
-// add income function
-// function incomeAdd() {
-//   input();
 
-//   if (displayscreen(moneyP) && displayscreen(details)) {
-//     history.push({
-//      Expense: details,
-//      Income: 'Income',
-//      Value: moneyP,
-//     });
 
-//     calculate();
-//     AllDeleteInput();
-//   } else{
-//     alert('All input are required');
-//   }
-//   init();
+function expenseAdd() {
+  input();
 
-// }
-
-// add expense function
-// function expenseAdd() {
-//   input();
-
-//   if (displayscreen(moneyP) && displayscreen(details)) {
-//     history.push({
-//      Expense: details,
-//      Income: 'Expense',
-//      Value: moneyP,
-//     })
+  if (displayscreen(moneyP) && displayscreen(details)) {
+    history.push({
+     Expense: details,
+     Income: 'Expense',
+     Value: moneyP,
+    })
     
-//     calculate();
-//     AllDeleteInput();
-//   } else{
-//     alert('All input are required');
-//   }
-//   init();
+    calculate();
+  } 
+  init();
 
-// }
-
-// display tableshow data
-// function displayTableData() {
-//   var totalIncome = document.getElementById('totalIncome');
-//   var totalExpense = document.getElementById('totalExpense');
-//   var totalMoneyP = document.getElementById(' totalMoneyP');
-//   tableShow = document.getElementById('tableShow');
-// }
+}
 
 
 function init() {
@@ -87,7 +56,7 @@ var balanceMoney = document.getElementById('balance');
 var incomeMoney = document.getElementById('income');
 var expenseMoney = document.getElementById('expense');
 var historyList = document.getElementById('history');
-var AlldeleteEl = document.getElementById('Alldelete')
+
 
 
 tableShow = document.getElementById('tableShow');
@@ -98,7 +67,7 @@ tableShow.innerHTML = `<table>
      <th>Expense</th>
      <th>Income</th>
      <th>Value</th>
-   </tr>
+   </tr> 
 
 </table>`
 
@@ -120,11 +89,8 @@ balanceMoney.innerHTML = `R${state.balance}`;
 expenseMoney.innerHTML = `R${state.expense}`;
 incomeMoney.innerHTML = `R${state.income}`;
 historyList.innerHTML = `R${state.history}`;
-AlldeleteEl.innerHTML = `R${state.Alldelete}`;
 
 }
-
-init();
 
 // calculate totals
 function calculate() {
@@ -143,4 +109,6 @@ for (let i = 0; i < tableShow.length; i++) {
   total = income - expense;
 }
 }
+
+init();
 
