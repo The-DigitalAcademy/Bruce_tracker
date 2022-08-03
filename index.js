@@ -85,6 +85,10 @@ for (let i = 0; i < state.history.length; i++) {
     
 }
 
+totalIncome.innerHTML = income;
+totalExpense.innerHTML = expense;
+totalMoney.innerHTML = total;
+
 balanceMoney.innerHTML = `R${state.balance}`;
 expenseMoney.innerHTML = `R${state.expense}`;
 incomeMoney.innerHTML = `R${state.income}`;
@@ -111,4 +115,18 @@ for (let i = 0; i < tableShow.length; i++) {
 }
 
 init();
+
+// remove from the table
+function removeTransaction(index) {
+  if (
+    window.confirm(
+      `Remove:  ${tableData[index].id + ': ' + tableData[index].transaction} ?`
+    )
+  ) {
+    tableData.splice(index, 1);
+    calculate();
+    displayTableData();
+  }
+}
+
 
