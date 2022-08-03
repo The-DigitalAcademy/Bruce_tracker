@@ -116,17 +116,5 @@ for (let i = 0; i < tableShow.length; i++) {
 
 init();
 
-// remove from the table
-function removeTransaction(index) {
-  if (
-    window.confirm(
-      `Remove:  ${tableData[index].id + ': ' + tableData[index].transaction} ?`
-    )
-  ) {
-    tableData.splice(index, 1);
-    calculate();
-    displayTableData();
-  }
-}
 
 
