@@ -1,104 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My bruce App</title>
-  <link rel="stylesheet" href="./index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
-  <div class="app">
-    <div class="input">
-      <hr>
-      <div class="title">
-        <h1>Expense Track your budget</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>expense tracker app</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="input">
+        <input type="text" id="transaction" placeholder="Transaction name" />
+        <input type="number" id="amount" placeholder="Amount" />
       </div>
-      <hr>
-      <div class="hr"></div>
-      <div class="create">
-        <input type="text" id="stateInput" placeholder="Enter your name "><br>
-        <button class="expenseBtn" onclick="expenseAdd()">- Expense</button>
+      <div class="button">
+        <button class="expense" onclick="addExpense()">- Expense</button><br>
+        <button class="income" onclick="addIncome()">+ Income</button>
       </div>
-      <div class="h3 d-grid gap-2 col-6 mx-auto">
-        <br>
-        <center>
-          <h3>Balance</h3>
-          <center>
-            <div id="balance">R5000</div>
-
-            <br>
-            <center>
-              <h4>Income</h4>
-              <div id="income">R200</div>
-
-              <br>
-              <h5>Expense</h5>
-              <div id="expense">R400</div>
+      <div class="statement">
+        <table border="50" id="tableRows">
+        </table>
       </div>
 
-    </div>
-    <div class="fill">
-      <input type="number" id="money" placeholder="Enter your amount"><br>
-      <button class="incomeBtn" onclick="incomeAdd()"> + Income</button>
-    </div>
-    <br>
+      <div class="display">
+        <h2 class="totalIncome">
+          Total Income is R<span id="totalIncome"></span>
+        </h2>
+        <h2 class="totalExpence">
+          Total Expence is R<span id="totalExpence"></span>
+        </h2>
+      </div>
 
-    <br>
-
-    <div class="expense d-grid gap-2 col-6 mx-auto">
-
-      <br>
-    </div>
-
-    <div class="h1 d-grid gap-2 col-6 mx-auto">
-      <div id="history"></div>
-      <hr>
-    </div>
-
-
-    <center>
-      <table id="tableShow" class="table">
-    </center>
-
-    <thead>
+      <div>
+      </div>
+        <table id="tableShow" class="table">
+      <thead>
+        
+        <div class="display">
+          <h2 class="tableshow">
+        
+          <th scope="col">Info</th><br>
+          <th scope="col"> Expense</th><br>
+          <th scope="col">Income</th>
+          <th scope="col">Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <th scope="row">1</th>
+          <td>Electrcity</td>
+          <td> salary</td>
+          <td>R1000</td>
+        </tr>
+        
+          <th scope="row">2</th>
+          <td>Food</td>
+          <td>product</td>
+          <td>R250</td>
+        </tr>
       
-
-        <th scope="col">Info</th><br>
-        <th scope="col"> Expense</th><br>
-        <th scope="col">Income</th>
-        <th scope="col">Value</th>
-      </tr>
-    </thead>
-    <tbody>
-      
-        <th scope="row">1</th>
-        <td>Electrcity</td>
-        <td> salary</td>
-        <td>R1000</td>
-      </tr>
-      
-        <th scope="row">2</th>
-        <td>Food</td>
-        <td>product</td>
-        <td>R250</td>
-      </tr>
-    
-        <th scope="row">3</th>
-        <td>Insurance</td>
-        <td>Rent</td>
-        <td>R500</td>
-      </tr>
-    </tbody>
-    </table>
-
-  </div>
-  <script src="./index.js"></script>
-</body>
-
+          <th scope="row">3</th>
+          <td>Insurance</td>
+          <td>Rent</td>
+          <td>R500</td>
+        </tr>
+      </tbody>
+      </table>
+    </div>
+    <script src="./script.js" defer></script>
+  </body>
 </html>

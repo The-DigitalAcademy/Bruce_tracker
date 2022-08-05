@@ -1,13 +1,12 @@
 var state = {
     balance: 0,
-    income: 0,
+    income: ,
     expense: 0,
-    history: []
+    tableShow: []
 }
 
 var details;
 var moneyP;
-var tableShow;
 var totalIncome;
 
 
@@ -21,7 +20,7 @@ function incomeAdd() {
   input();
 
   if (displayscreen(moneyP) && displayscreen(details)) {
-    history.push({
+    tableShow.push({
      Expense: details,
      Income: 'Income',
      Value: moneyP,
@@ -38,7 +37,7 @@ function expenseAdd() {
   input();
 
   if (displayscreen(moneyP) && displayscreen(details)) {
-    history.push({
+    tableShow.push({
      Expense: details,
      Income: 'Expense',
      Value: moneyP,
@@ -71,12 +70,12 @@ tableShow.innerHTML = `<table>
 
 </table>`
 
-for (let i = 0; i < state.history.length; i++) {
+for (let i = 0; i < state.tableShow.length; i++) {
     tableShow.innerHTML += `<table>
               <tr>
-                <th>${state.history[i].expense}</th>
-               <td>${state.history[i].income}</td>
-                <td>R${state.history[i].value}</td>
+                <th>${state.tableShow[i].expense}</th>
+               <td>${state.tableShow[i].income}</td>
+                <td>R${state.tableShow[i].value}</td>
                 <td><button class="Alldelete" onClick="Alldelete(${i})">Alldelete</button></td>
               </tr>
   
@@ -107,7 +106,7 @@ for (let i = 0; i < tableShow.length; i++) {
     income += tableShow[i].amount;
   }
   if (tableShow[i].type == 'expense') {
-    expense += tableShow[i].amount;
+    expense -= tableShow[i].amount;
   }
   
   total = income - expense;
