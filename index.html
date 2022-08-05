@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>expense tracker app</title>
+    <title> Expense tracker </title>
   </head>
   <body>
     <div class="app">
       <div class="input">
-        <input type="text" id="transaction" placeholder="Transaction name" />
+       <br> <center><input type="text" id="transaction" placeholder="Transaction name" /><center><br>
         <input type="number" id="amount" placeholder="Amount" />
       </div>
       <div class="button">
@@ -18,7 +18,7 @@
         <center><button class="income" onclick="addIncome()">+ Income</button></center>
       </div>
       <div class="statement">
-        <table border="102" id="tableRows">
+        <table border="1" id="tableRows">
         </table>
       </div>
 
@@ -43,28 +43,10 @@
           <th scope="col"> Expense</th><br>
           <th scope="col">Income</th>
           <th scope="col">Value</th>
+        </div>
         </tr>
       </thead>
-      <tbody>
-        
-          <th scope="row">1</th>
-          <td>Electrcity</td>
-          <td> salary</td>
-          <td>R1000</td>
-        </tr>
-        
-          <th scope="row">2</th>
-          <td>Food</td>
-          <td>product</td>
-          <td>R250</td>
-        </tr>
-      
-          <th scope="row">3</th>
-          <td>Insurance</td>
-          <td>Rent</td>
-          <td>R500</td>
-        </tr>
-      </tbody>
+     
       </table>
     </div>
     <script src="./script.js" defer></script>
