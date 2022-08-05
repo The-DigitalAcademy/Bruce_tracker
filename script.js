@@ -86,7 +86,7 @@ function displayTableData() {
   <th>Receipts</th>
   <th>Type of items</th>
   <th>Value</th>
-  <th>Action</th>
+  <th>Remove</th>
 </tr>`;
 
   for (let i = 0; i < tableData.length; i++) {

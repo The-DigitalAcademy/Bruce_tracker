@@ -22,7 +22,7 @@ body {
 }
 
 .input {
-  width: 100%;
+  width: 1rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
