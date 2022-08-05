@@ -24,7 +24,8 @@ function isValid(value) {
 function addIncome() {
   getUserInput();
 
-  if (isValid(amount) && isValid(transactionName)) {
+  i
+  f (isValid(amount) && isValid(transactionName)) {
     tableData.push({
       id: tableData.length + 1,
       transaction: transactionName,
