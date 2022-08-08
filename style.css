@@ -67,7 +67,7 @@ button:hover {
   position: relative;
   overflow-y: scroll;
   display: flex;
-  flex-direction: column;
+flex-direction: column;
   justify-content: center;
   gap: 1rem;
   background-color: white;
@@ -109,7 +109,7 @@ button:hover {
 }
 
 .Totalbalance {
-  color:black
+  color:rgb(118, 124, 133)
 }
 
 /* .test {
@@ -121,8 +121,8 @@ button:hover {
 } */
 
 .delete {
-  border: solid 2px rgb(255, 128, 128);
-  color: red
+  border: solid 2px Black;
+  color: rgb(209, 23, 23)
 }
 
 .clear {
@@ -136,7 +136,7 @@ button:hover {
  border: solid;
 }
 
-.remove{
+.Delete{
   background-color: black;
   border: bolder;
 }

@@ -86,7 +86,7 @@ function displayTableData() {
   <th>Receipts</th>
   <th>Type of items</th>
   <th>Value</th>
-  <th>Remove</th>
+  <th>Delete</th>
 </tr>`;
 
   for (let i = 0; i < tableData.length; i++) {
@@ -96,7 +96,7 @@ function displayTableData() {
               <td>${tableData[i].transaction}</td>
               <td>${tableData[i].type}</td>
               <td>R${tableData[i].amount}</td>
-              <td><button class="remove" onClick="removeTransaction(${i})">remove</button></td>
+              <td><button class="Delete" onClick="removeTransaction(${i})">Delete</button></td>
             </tr>
     `;
   }
@@ -128,7 +128,7 @@ function calculate() {
 function removeTransaction(index) {
   if (
     window.confirm(
-      `Remove:  ${tableData[index].id + ': ' + tableData[index].transaction} ?`
+      `Delete:  ${tableData[index].id + ': ' + tableData[index].transaction} ?`
     )
   ) {
     tableData.splice(index, 1);
